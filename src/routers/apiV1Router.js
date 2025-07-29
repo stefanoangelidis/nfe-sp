@@ -19,6 +19,12 @@ const apiV1Controller = require('../controllers/apiV1Controller');
 //==============================================================================
 router.post('/teste', apiV1Controller.teste);
 
+router.post('/nfse/emitir', apiV1Controller.emitirNota);
+router.get('/nfse/consultar', apiV1Controller.consultarNota);
+router.post('/nfse/cancelar', apiV1Controller.cancelarNota);
+router.get('/cnpj/:cnpj/inscricao', apiV1Controller.consultarInscricao);
+
+
 
 
 module.exports = router;
